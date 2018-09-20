@@ -1,0 +1,15 @@
+use tufas
+db
+db.routes.insert({"wall": "Window Slab", "setter":"Rory", "grade": "yellow", "style":["crimpy"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["arete on"]})
+db.routes.insert({"wall": "Window Slab", "setter":"Char", "grade": "red", "style":["balancy","mantel"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["great climb"]})
+db.routes.insert({"wall": "Low Overhang", "setter":"Rory", "grade": "yellow", "style":["crimpy"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["arete on"]})
+db.routes.insert({"wall": "Low Overhang", "setter":"Char", "grade": "red", "style":["long","slopy"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["sustained"]})
+db.routes.insert({"wall": "Right Buttress", "setter":"Reiver", "grade": "green", "style":["juggy","big moves"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["hard gaston"]})
+db.routes.insert({"wall": "Buttress Prow", "setter":"Reiver", "grade": "red", "style":["crimpy","highball"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["compression problem!"]})
+db.routes.insert({"wall": "Left Buttress", "setter":"Rory", "grade": "black", "style":["balancy","slopey"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["love it"]})
+db.routes.insert({"wall": "Roof Cave", "setter":"Rory", "grade": "blue", "style":["juggy","heelhook"],"holdColor":"red","setDate":"2018-09-01","removeDate":"2018-12-01","notes":["hand foot match","use the volume"]})
+db.routes.insert({"wall": "Steep Wall", "setter":"Char", "grade": "pink", "style":["slopey"],"holdColor":"red","setDate":"2018-09-12","removeDate":"2018-12-01","notes":["good heelhook"]})
+db.routes.insert({"wall": "Ceiling", "setter":"Char", "grade": "purple", "style":["juggy","long"],"holdColor":"red","setDate":"2018-09-12","removeDate":"2018-12-01","notes":["hard finish"]})
+db.routes.insert({"wall": "Abyss", "setter":"Reiver", "grade": "black", "style":["long","crimpy"],"holdColor":"red","setDate":"2018-09-12","removeDate":"2018-12-01","notes":["Hardest in the gym"]})
+db.routes.insert({"wall": "Abyss", "setter":"Rory", "grade": "red", "style":["long","toehooks"],"holdColor":"red","setDate":"2018-09-12","removeDate":"2018-12-01","notes":["Tricky Start"]})
+db.routes.insert({"wall": "Exit Wall", "setter":"Reiver", "grade": "red", "style":["heelhooks","big moves"],"holdColor":"red","setDate":"2018-09-12","removeDate":"2018-12-01","notes":["hard", "big finish"]})
