@@ -1,17 +1,20 @@
 // We'll be rewriting the table's data frequently, so let's make our code more DRY
 // by writing a function that takes in 'animals' (JSON) and creates a table body
-function displayResults(animals) {
+function displayResults(routes) {
     // First, empty the table
     $("tbody").empty();
   
     // Then, for each entry of that json...
-    animals.forEach(function(animal) {
+    routes.forEach(function(route) {
       // Append each of the animal's properties to the table
-      $("tbody").append("<tr><td>" + animal.name + "</td>" +
-                           "<td>" + animal.numLegs + "</td>" +
-                           "<td>" + animal.class + "</td>" +
-                           "<td>" + animal.weight + "</td>" +
-                           "<td>" + animal.whatIWouldReallyCallIt + "</td></tr>");
+      $("tbody").append("<tr><td>" + route.wall + "</td>" +
+                           "<td>" + route.setter + "</td>" +
+                           "<td>" + route.grade + "</td>" +
+                           "<td>" + route.style + "</td>" +
+                           "<td>" + route.holdColor + "</td>" +
+                           "<td>" + route.setDate + "</td>" +
+                           "<td>" + route.removeDate + "</td>" +
+                           "<td>" + route.notes + "</td></tr>");
     });
   }
   
@@ -35,24 +38,24 @@ function displayResults(animals) {
   // ======================
   
   // When user clicks the weight sort button, display table sorted by weight
-  $("#weight-sort").on("click", function() {
+  $("#grade-sort").on("click", function() {
     // Set new column as currently-sorted (active)
-    setActive("#animal-weight");
+    setActive("#route-grade");
   
     // Do an api call to the back end for json with all animals sorted by weight
-    $.getJSON("/weight", function(data) {
+    $.getJSON("/grade", function(data) {
       // Call our function to generate a table body
       displayResults(data);
     });
   });
   
   // When user clicks the name sort button, display the table sorted by name
-  $("#name-sort").on("click", function() {
+  $("#setter-sort").on("click", function() {
     // Set new column as currently-sorted (active)
-    setActive("#animal-name");
+    setActive("#route-setter");
   
     // Do an api call to the back end for json with all animals sorted by name
-    $.getJSON("/name", function(data) {
+    $.getJSON("/setter", function(data) {
       // Call our function to generate a table body
       displayResults(data);
     });
