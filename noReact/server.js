@@ -1,9 +1,9 @@
 // Dependencies
 var express = require("express");
-var mongojs = require("mongojs");
+var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
-
+var PORT = 3000;
 // Initialize Express
 var app = express();
 // Set the app up with morgan.
@@ -21,13 +21,7 @@ app.use(
 // Set up a static folder (public) for our web app
 app.use(express.static("public"));
 
-// Database configuration
-// Save the URL of our database as well as the name of our collection
-var databaseUrl = "tufas";
-var collections = ["routes", "notes"];
-
-// Use mongojs to hook the database to the db variable
-var db = mongojs(databaseUrl, collections);
+var db = require("./models");
 
 // This makes sure that any errors are logged if mongodb runs into an issue
 db.on("error", function(error) {
@@ -219,6 +213,7 @@ app.get("/grade", function(req, res) {
 });
 
 // Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
+// Start the server
+app.listen(PORT, function() {
+  console.log("App running on port http://localhost:" + PORT + " !");
 });
