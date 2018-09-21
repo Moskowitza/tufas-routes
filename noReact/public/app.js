@@ -14,7 +14,7 @@ function displayResults(routes) {
                            "<td>" + route.holdColor + "</td>" +
                            "<td>" + route.setDate + "</td>" +
                            "<td>" + route.removeDate + "</td>" +
-                           "<td>" + route.notes + "</td></tr>");
+                           "<td>" + route.notes + " <input type='text' id='title' /></td></tr>");
     });
   }
   
