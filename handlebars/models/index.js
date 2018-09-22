@@ -1,5 +1,6 @@
 module.exports = {
-    Route: require("./Route"),
+
+    Problem: require("./Problem"),
     Note: require("./Note")
   };
   
