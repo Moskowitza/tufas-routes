@@ -13,7 +13,7 @@ var NoteSchema = new Schema({
   // This allows us to populate the Article with an associated Note
   climber: {
     type: Schema.Types.ObjectId,
-    ref: "Note"
+    ref: "Climber"
   }
 });
 
