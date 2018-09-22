@@ -5,8 +5,7 @@ var Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new UserSchema object
 // This is similar to a Sequelize model
-var RouteSchema = new Schema({
- 
+var ProblemSchema = new Schema({
   wall: {
     type: String,
     required: true
@@ -23,10 +22,6 @@ var RouteSchema = new Schema({
     type: String,
     required: true
   },
-  ascents: {
-    type: Schema.Types.ObjectId,
-    required: "Climber"
-  },
   // `note` is an object that stores a Note id
   // The ref property links the ObjectId to the Note model
   // This allows us to populate the Article with an associated Note
@@ -37,7 +32,7 @@ var RouteSchema = new Schema({
 });
 
 // This creates our model from the above schema, using mongoose's model method
-var Route = mongoose.model("Route", RouteSchema);
+var Problem = mongoose.model("Problem", ProblemSchema);
 
 // Export the Article model
-module.exports = Route;
+module.exports = Problem;
